@@ -1,0 +1,2068 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "B24744DE-F3AC-474C-8911-FBC8978CE6F3"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EE392FD2-F971-4924-BC65-5FCCDC504120"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/DataURL.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "urlTemp()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EE392FD2-F971-4924-BC65-5FCCDC504120 - e22e6eefb8415931"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Weather.testURL.urlTemp() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/DataURL.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "444">
+               </Location>
+               <Location
+                  uuid = "EE392FD2-F971-4924-BC65-5FCCDC504120 - 4892a401b434716a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Weather.testURL.urlTemp() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/DataURL.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  uuid = "EE392FD2-F971-4924-BC65-5FCCDC504120 - e22e6eefb8415931"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Weather.testURL.urlTemp() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/DataURL.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "232">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "97B5E89C-D791-43E6-91D8-22BE217A2D40"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/DataURL.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "urlTemp()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F7899807-A87B-4566-8EB0-6590CA8535DF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/DataURL.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "urlTemp()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F7899807-A87B-4566-8EB0-6590CA8535DF - 4892a401b43471ac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Weather.testURL.urlTemp() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/DataURL.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "1416">
+               </Location>
+               <Location
+                  uuid = "F7899807-A87B-4566-8EB0-6590CA8535DF - 4892a401b434718d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Weather.testURL.urlTemp() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/DataURL.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  uuid = "F7899807-A87B-4566-8EB0-6590CA8535DF - 4892a401b434718d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Weather.testURL.urlTemp() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/DataURL.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "228">
+               </Location>
+               <Location
+                  uuid = "F7899807-A87B-4566-8EB0-6590CA8535DF - 4892a401b434718d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Weather.testURL.urlTemp() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/DataURL.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "1132">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F18F1CE0-46B7-4731-88A2-A87676D93CF5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/DataURL.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "urlTemp()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F18F1CE0-46B7-4731-88A2-A87676D93CF5 - 4892a401b43471ac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Weather.testURL.urlTemp() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/DataURL.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "1416">
+               </Location>
+               <Location
+                  uuid = "F18F1CE0-46B7-4731-88A2-A87676D93CF5 - 4892a401b43471cf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Weather.testURL.urlTemp() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/DataURL.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "1416">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B7AB0A99-17C8-44F8-AE80-E08175B9EBBF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/DataURL.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "urlTemp()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B7AB0A99-17C8-44F8-AE80-E08175B9EBBF - 4892a401b43471cf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Weather.testURL.urlTemp() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/DataURL.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "1456">
+               </Location>
+               <Location
+                  uuid = "B7AB0A99-17C8-44F8-AE80-E08175B9EBBF - 4892a401b43471cf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Weather.testURL.urlTemp() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/DataURL.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "1416">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E68A25EA-C9E7-42C6-9FBE-AC2849726ECE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/DataURL.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "urlTemp()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E68A25EA-C9E7-42C6-9FBE-AC2849726ECE - e22e6eefb8415952"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Weather.testURL.urlTemp() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/DataURL.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "232">
+               </Location>
+               <Location
+                  uuid = "E68A25EA-C9E7-42C6-9FBE-AC2849726ECE - e22e6eefb8415931"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Weather.testURL.urlTemp() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/DataURL.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "232">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "66075C28-84A5-4B3A-91ED-A3431B71731C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/DataURL.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "testURL"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "66075C28-84A5-4B3A-91ED-A3431B71731C - e35b76a574fd35eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Weather.testURL.deinit"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/DataURL.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "66075C28-84A5-4B3A-91ED-A3431B71731C - b050c36fed90aff6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Weather.testURL.__deallocating_deinit"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/DataURL.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "66075C28-84A5-4B3A-91ED-A3431B71731C - 2f70bf175ceb6062"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Weather.testURL.__allocating_init() -&gt; Weather.testURL"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/DataURL.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "66075C28-84A5-4B3A-91ED-A3431B71731C - e5356513f25608f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Weather.testURL.init() -&gt; Weather.testURL"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/DataURL.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "06188BB3-FA74-4204-A352-19ECAA0D22FB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/DataURL.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "testURL"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B76AFDC1-01EA-47BE-93DA-0DC6AC033B77"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "tempText()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B76AFDC1-01EA-47BE-93DA-0DC6AC033B77 - 60846615048bb13b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Weather.ViewController.image() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "B76AFDC1-01EA-47BE-93DA-0DC6AC033B77 - f9ce4b6807e150ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Weather.ViewController.tempText() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "625B82B0-DB15-4FFB-8E5B-BA8532117D06"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "labelCity()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F1A52481-2899-46E3-B760-2BD128D31C1C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ImageSelection.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "testPogoda()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F1A52481-2899-46E3-B760-2BD128D31C1C - 43eda039b0dc052d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in Weather.SelectionImage.testPogoda() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ImageSelection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "F1A52481-2899-46E3-B760-2BD128D31C1C - 3156a4a611e2c2fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.String) -&gt; () in Weather.SelectionImage.testPogoda() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ImageSelection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "F1A52481-2899-46E3-B760-2BD128D31C1C - 98ce253d9bd67559"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in Weather.SelectionImage.testPogoda() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ImageSelection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "F1A52481-2899-46E3-B760-2BD128D31C1C - bdf7d81f202dfb00"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in closure #1 @Swift.MainActor () -&gt; () in Weather.SelectionImage.testPogoda() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ImageSelection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B89C9839-DF77-4C4B-9D8E-61E74893B4B9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ImageSelection.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "testPogoda()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B89C9839-DF77-4C4B-9D8E-61E74893B4B9 - d79b10a22d2c0955"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in Weather.SelectionImage.testPogoda() -&gt; __C.UIImage"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ImageSelection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "408">
+               </Location>
+               <Location
+                  uuid = "B89C9839-DF77-4C4B-9D8E-61E74893B4B9 - d79b10a22d2c09b6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in Weather.SelectionImage.testPogoda() -&gt; __C.UIImage"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ImageSelection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "408">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B71C8585-3632-4065-B20F-BDAFB0802F75"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ImageSelection.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "testPogoda()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B71C8585-3632-4065-B20F-BDAFB0802F75 - d79b10a22d2c09f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in Weather.SelectionImage.testPogoda() -&gt; __C.UIImage"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ImageSelection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "408">
+               </Location>
+               <Location
+                  uuid = "B71C8585-3632-4065-B20F-BDAFB0802F75 - 2b9a564217170c5d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.String) -&gt; () in Weather.SelectionImage.testPogoda() -&gt; __C.UIImage"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ImageSelection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "B71C8585-3632-4065-B20F-BDAFB0802F75 - d79b10a22d2c09b6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in Weather.SelectionImage.testPogoda() -&gt; __C.UIImage"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ImageSelection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "136">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1C9D5AC7-32A5-4D6B-AD60-746CFC637C20"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ImageSelection.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "testPogoda()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1C9D5AC7-32A5-4D6B-AD60-746CFC637C20 - 3156a4a611e2c291"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.String) -&gt; () in Weather.SelectionImage.testPogoda() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ImageSelection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "356">
+               </Location>
+               <Location
+                  uuid = "1C9D5AC7-32A5-4D6B-AD60-746CFC637C20 - bdf7d81f202dfb6f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in closure #1 @Swift.MainActor () -&gt; () in Weather.SelectionImage.testPogoda() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ImageSelection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "224">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2F0315C7-8707-40F5-B544-3578F1C7B61E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ImageSelection.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "testPogoda()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2F0315C7-8707-40F5-B544-3578F1C7B61E - 3156a4a611e2c2fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.String) -&gt; () in Weather.SelectionImage.testPogoda() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ImageSelection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "2F0315C7-8707-40F5-B544-3578F1C7B61E - bdf7d81f202dfb00"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in closure #1 @Swift.MainActor () -&gt; () in Weather.SelectionImage.testPogoda() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ImageSelection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "877ADE73-5B82-43C8-8EC1-9E13949275A0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "tempText()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "877ADE73-5B82-43C8-8EC1-9E13949275A0 - f9ce4b6807e15088"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Weather.ViewController.tempText() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "168">
+               </Location>
+               <Location
+                  uuid = "877ADE73-5B82-43C8-8EC1-9E13949275A0 - 1c6f0dedfa353755"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in Weather.ViewController.tempText() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "184">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6CDE1DB8-F769-4961-AACB-E102A3C68113"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "tempText()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6CDE1DB8-F769-4961-AACB-E102A3C68113 - 1c6f0dedfa353755"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in Weather.ViewController.tempText() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "6CDE1DB8-F769-4961-AACB-E102A3C68113 - 98f7cd099a146fc3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.String) -&gt; () in Weather.ViewController.tempText() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "063D0DC1-2BBE-4D37-8AAC-059A27318C8D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "tempText()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "772996FA-7F39-4E50-8B39-96F660A947BA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/DataURL.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "urlTemp()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "772996FA-7F39-4E50-8B39-96F660A947BA - 4892a401b4347262"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Weather.testURL.urlTemp() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/DataURL.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "1980">
+               </Location>
+               <Location
+                  uuid = "772996FA-7F39-4E50-8B39-96F660A947BA - 4892a401b4347262"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Weather.testURL.urlTemp() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/DataURL.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "2176">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "08969785-176C-4C9A-B4E8-A52D55A2A36D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/DataURL.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "urlTemp()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3435D301-120C-4F64-865C-4066C945BDA7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "image()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5CC04285-B4BF-4819-A692-8CA22D47FA72"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "image()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "067DE309-0FB4-4D01-83C0-7668817D3A88"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "image()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "067DE309-0FB4-4D01-83C0-7668817D3A88 - 90aa5a63b5dd7a49"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in Weather.ViewController.image() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "067DE309-0FB4-4D01-83C0-7668817D3A88 - 684129178cb39f9e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.String) -&gt; () in Weather.ViewController.image() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "124">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "634A906E-3B7B-4EDA-82D0-A85B15E65C3B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ImageSelection.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "testPogoda()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "634A906E-3B7B-4EDA-82D0-A85B15E65C3B - 881f2b105093d146"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Weather.SelectionImage.testPogoda() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ImageSelection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "634A906E-3B7B-4EDA-82D0-A85B15E65C3B - 43eda039b0dc052d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in Weather.SelectionImage.testPogoda() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ImageSelection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "634A906E-3B7B-4EDA-82D0-A85B15E65C3B - 881f2b105093d146"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Weather.SelectionImage.testPogoda() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ImageSelection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "634A906E-3B7B-4EDA-82D0-A85B15E65C3B - 98ce253d9bd67559"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in Weather.SelectionImage.testPogoda() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ImageSelection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E9449EB3-5618-4E21-8A75-6F52345E8AFD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ImageSelection.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "testPogoda()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E9449EB3-5618-4E21-8A75-6F52345E8AFD - 3156a4a611e2c291"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.String) -&gt; () in Weather.SelectionImage.testPogoda() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ImageSelection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "356">
+               </Location>
+               <Location
+                  uuid = "E9449EB3-5618-4E21-8A75-6F52345E8AFD - bdf7d81f202dfcad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in closure #1 @Swift.MainActor () -&gt; () in Weather.SelectionImage.testPogoda() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ImageSelection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "356">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5AC6B955-A337-4905-A6BA-4F1B05BA9D94"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ImageSelection.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "testPogoda()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5AC6B955-A337-4905-A6BA-4F1B05BA9D94 - 3156a4a611e2c553"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.String) -&gt; () in Weather.SelectionImage.testPogoda() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ImageSelection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "524">
+               </Location>
+               <Location
+                  uuid = "5AC6B955-A337-4905-A6BA-4F1B05BA9D94 - bdf7d81f202dfceb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in closure #1 @Swift.MainActor () -&gt; () in Weather.SelectionImage.testPogoda() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ImageSelection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "524">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D8E149EA-428C-4E53-9426-B3DC3CCC3A82"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+            landmarkName = "image()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0C2C1BC7-86B3-48BD-AEBE-D9D57CD1E205"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "image()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "07FF830B-3228-4FE0-9136-EDE5006EBF54"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "image()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "07FF830B-3228-4FE0-9136-EDE5006EBF54 - 684129178cb39c1a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.String) -&gt; () in Weather.ViewController.image() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "560">
+               </Location>
+               <Location
+                  uuid = "07FF830B-3228-4FE0-9136-EDE5006EBF54 - 989e94df1062fc56"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SnapKit.ConstraintMaker) -&gt; () in closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.String) -&gt; () in Weather.ViewController.image() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7FC163ED-F0A7-4263-A108-E7D29FA41C2C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "image()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F7C3F08F-B612-4EC4-83D6-41A4D201DBDD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "textObl()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F7C3F08F-B612-4EC4-83D6-41A4D201DBDD - b225c412f809a66b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Weather.ViewController.textObl() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "110"
+                  endingLineNumber = "110"
+                  offsetFromSymbolStart = "216">
+               </Location>
+               <Location
+                  uuid = "F7C3F08F-B612-4EC4-83D6-41A4D201DBDD - e2098523cd0d2abc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in Weather.ViewController.textObl() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "111"
+                  endingLineNumber = "111"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "F7C3F08F-B612-4EC4-83D6-41A4D201DBDD - b225c412f809a6a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Weather.ViewController.textObl() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "168">
+               </Location>
+               <Location
+                  uuid = "F7C3F08F-B612-4EC4-83D6-41A4D201DBDD - c7aa7416d06d6382"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in Weather.ViewController.textObl() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "F7C3F08F-B612-4EC4-83D6-41A4D201DBDD - b225c412f809a107"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Weather.ViewController.textObl() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "168">
+               </Location>
+               <Location
+                  uuid = "F7C3F08F-B612-4EC4-83D6-41A4D201DBDD - c7aa7416d06d646c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in Weather.ViewController.textObl() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "184">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "931B937A-9279-491F-8E1E-33C45A55BAE0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "textObl()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "931B937A-9279-491F-8E1E-33C45A55BAE0 - e2098523cd0d2abc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in Weather.ViewController.textObl() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "111"
+                  endingLineNumber = "111"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "931B937A-9279-491F-8E1E-33C45A55BAE0 - 6dea24eaf7a9ad27"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in closure #1 @Swift.MainActor () -&gt; () in Weather.ViewController.textObl() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "931B937A-9279-491F-8E1E-33C45A55BAE0 - c7aa7416d06d6382"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in Weather.ViewController.textObl() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "931B937A-9279-491F-8E1E-33C45A55BAE0 - 3f22431554742672"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.String) -&gt; () in Weather.ViewController.textObl() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "931B937A-9279-491F-8E1E-33C45A55BAE0 - c7aa7416d06d646c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in Weather.ViewController.textObl() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "931B937A-9279-491F-8E1E-33C45A55BAE0 - 3f22431554742020"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.String) -&gt; () in Weather.ViewController.textObl() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "132"
+                  endingLineNumber = "132"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3D30AB44-CA1E-4FA8-A0A0-3F39D8BD108E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "textObl()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3D30AB44-CA1E-4FA8-A0A0-3F39D8BD108E - 6dea24eaf7a9ad27"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in closure #1 @Swift.MainActor () -&gt; () in Weather.ViewController.textObl() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "3D30AB44-CA1E-4FA8-A0A0-3F39D8BD108E - 932c76940240e5ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.String) -&gt; () in closure #1 @Swift.MainActor () -&gt; () in Weather.ViewController.textObl() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "3D30AB44-CA1E-4FA8-A0A0-3F39D8BD108E - 3f22431554742672"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.String) -&gt; () in Weather.ViewController.textObl() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "3D30AB44-CA1E-4FA8-A0A0-3F39D8BD108E - 3f22431554742020"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.String) -&gt; () in Weather.ViewController.textObl() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "132"
+                  endingLineNumber = "132"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B89BF64D-4774-4621-90A3-6AD41FAE34C1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
+            landmarkName = "textObl()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B89BF64D-4774-4621-90A3-6AD41FAE34C1 - 6dea24eaf7a9acb8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in closure #1 @Swift.MainActor () -&gt; () in Weather.ViewController.textObl() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "115"
+                  endingLineNumber = "115"
+                  offsetFromSymbolStart = "404">
+               </Location>
+               <Location
+                  uuid = "B89BF64D-4774-4621-90A3-6AD41FAE34C1 - b225c412f809a793"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Weather.ViewController.textObl() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "268">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5A8DA0C1-A8DD-41CB-AB00-EDB145611554"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
+            landmarkName = "textObl()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5A8DA0C1-A8DD-41CB-AB00-EDB145611554 - e2098523cd0d2b63"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in Weather.ViewController.textObl() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "5A8DA0C1-A8DD-41CB-AB00-EDB145611554 - b225c412f809a793"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Weather.ViewController.textObl() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "268">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9901ADE8-8B76-4140-BA11-F7D4CA20BF21"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
+            landmarkName = "textObl()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9901ADE8-8B76-4140-BA11-F7D4CA20BF21 - b225c412f809a774"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Weather.ViewController.textObl() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "117"
+                  endingLineNumber = "117"
+                  offsetFromSymbolStart = "484">
+               </Location>
+               <Location
+                  uuid = "9901ADE8-8B76-4140-BA11-F7D4CA20BF21 - b225c412f809a7b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Weather.ViewController.textObl() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "344">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EBB06D38-D785-44B2-97EA-BF30EC942E53"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "textObl()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EBB06D38-D785-44B2-97EA-BF30EC942E53 - b225c412f809a793"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Weather.ViewController.textObl() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "560">
+               </Location>
+               <Location
+                  uuid = "EBB06D38-D785-44B2-97EA-BF30EC942E53 - b225c412f809a7d1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Weather.ViewController.textObl() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "416">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "213FA5CE-C3AB-4FC9-B36B-FE54156031B0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "textObl()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "213FA5CE-C3AB-4FC9-B36B-FE54156031B0 - 932c76940240e5ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.String) -&gt; () in closure #1 @Swift.MainActor () -&gt; () in Weather.ViewController.textObl() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "213FA5CE-C3AB-4FC9-B36B-FE54156031B0 - 3f22431554742653"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.String) -&gt; () in Weather.ViewController.textObl() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "115"
+                  endingLineNumber = "115"
+                  offsetFromSymbolStart = "116">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7557BFCA-911A-451F-B6D2-4F59CFD00603"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
+            landmarkName = "dayAndTime()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "98175C58-2B4C-4AED-AE76-1602BC16ADA4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
+            landmarkName = "dayAndTime()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B493FF36-E186-447C-BDCE-50F6E1D29A2A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "201"
+            endingLineNumber = "201"
+            landmarkName = "dayAndTime()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B493FF36-E186-447C-BDCE-50F6E1D29A2A - 97cd8c6bd8f373e3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Weather.ViewController.dayAndTime() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "199"
+                  endingLineNumber = "199"
+                  offsetFromSymbolStart = "220">
+               </Location>
+               <Location
+                  uuid = "B493FF36-E186-447C-BDCE-50F6E1D29A2A - fd5e25c3ab20e44a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in Weather.ViewController.dayAndTime() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "200"
+                  endingLineNumber = "200"
+                  offsetFromSymbolStart = "184">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3E4AFDF0-E944-42CD-979D-0296AA1879A0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/TimeAndDate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "timeAndDate()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8F84DB22-CB26-44E0-B6BE-899FBB68B7C0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/TimeAndDate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "timeAndDate()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "49720ABD-1B20-4056-A2D5-32F68E64BCCB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/TimeAndDate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "timeAndDate()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D9571A30-CA4A-450D-BAEA-86DB3405376C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/TimeAndDate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "timeAndDate()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CA56D357-55D8-463A-B9B4-C2423A3120BE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/TimeAndDate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "timeAndDate()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CA56D357-55D8-463A-B9B4-C2423A3120BE - 7fd1ec386cd41bd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Weather.TimeAndDate.timeAndDate() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/TimeAndDate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "292">
+               </Location>
+               <Location
+                  uuid = "CA56D357-55D8-463A-B9B4-C2423A3120BE - 7fd1ec386cd41bd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Weather.TimeAndDate.timeAndDate() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/TimeAndDate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "380">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "92027989-B5FB-48E5-B120-6F5D16E1AED2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/TimeAndDate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "timeAndDate()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "06EE6916-17E1-49E0-9A2D-E8B0D999E23B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Weather/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "textObl()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "06EE6916-17E1-49E0-9A2D-E8B0D999E23B - b225c412f809a107"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Weather.ViewController.textObl() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "168">
+               </Location>
+               <Location
+                  uuid = "06EE6916-17E1-49E0-9A2D-E8B0D999E23B - c7aa7416d06d646c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in Weather.ViewController.textObl() -&gt; ()"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/glebgurev/Documents/GitHub/Weather-Ped-Project-/Weather/Weather/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "184">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
