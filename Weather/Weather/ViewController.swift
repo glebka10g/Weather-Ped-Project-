@@ -21,21 +21,26 @@ enum buttonsDaysConfig {
 
 
 class ViewController: UIViewController {
-    
+    private let cityes = Cityes()
     private let DataUrl = testURL()
     private let imageSelection = SelectionImage()
+    private let chooseCity = ChooseACityVC()
+    private let timeAndDate = TimeAndDate()
+    private let feels = UILabel()
+    private let buttonSearch = UIButton(type: .custom)
+    private let city = UILabel()
+    private let textTemp = UILabel()
+    private let timeDate = UILabel()
     
+    private let defaults = UserDefaults.standard
     
     struct Label {
         var name: String
         var textColor: UIColor
         var font: UIFont
-
-
         static func getTextColor() -> UIColor {
             return UIColor.black
         }
-
         static func getFont() -> UIFont {
             return UIFont.boldSystemFont(ofSize: 26)
         }
@@ -60,23 +65,25 @@ class ViewController: UIViewController {
     }
     
     func labelCity() {
-        let city = UILabel()
         city.textColor = UIColor.white
         city.font = Label.getFont()
         view.addSubview(city)
-        city.text = "Москва"
+        if let nameCity = defaults.string(forKey: "city") {
+            city.text = nameCity
+        } else {
+            city.text = "Выберите город"
+        }
         city.snp.makeConstraints { maker in
-            maker.top.left.equalToSuperview().inset(20)
-            maker.height.width.equalTo(100)
+            maker.top.left.equalToSuperview().inset(70)
+            maker.left.equalToSuperview().inset(20)
         }
     }
     
     func tempText() {
-        let textTemp = UILabel()
         let _ = DataUrl.urlTemp()
         DataUrl.closureTemp = { value in
             DispatchQueue.main.async{
-                textTemp.text = "\(value)°"
+                self.textTemp.text = "\(value)°"
             }
         }
         textTemp.textColor = .white
@@ -89,11 +96,10 @@ class ViewController: UIViewController {
     }
     
     func feelsLike() {
-        let feels = UILabel()
-            DataUrl.closureFeels = { value in
-                DispatchQueue.main.async {
-                feels.text = "Ощущение \(value)°"
-                print(value)
+        DataUrl.closureFeels = { value in
+            DispatchQueue.main.async {
+                self.feels.text = "Ощущение \(value)°"
+                
             }
         }
         feels.textColor = .white
@@ -101,16 +107,16 @@ class ViewController: UIViewController {
         view.addSubview(feels)
         
         feels.snp.makeConstraints { maker in
-            maker.left.equalToSuperview().inset(100)
-            maker.top.equalToSuperview().inset(230)
+            maker.left.equalToSuperview().inset(103)
+            maker.top.equalToSuperview().inset(233)
         }
     }
     
     
     func image() {
         imageSelection.closureImage = { value in
-           DispatchQueue.main.async{
-                print(value)
+            DispatchQueue.main.async{
+                
                 let newImage = UIImage(named: value)
                 let imageView = UIImageView(image: newImage)
                 self.view.addSubview(imageView)
@@ -135,7 +141,7 @@ class ViewController: UIViewController {
         }
         
         imageSelection.testPogoda()
-       
+        
         textObl.font = .systemFont(ofSize: 22)
         textObl.textColor = .white
         view.addSubview(textObl)
@@ -176,6 +182,7 @@ class ViewController: UIViewController {
             maker.width.equalTo(config.widthConstraint)
             maker.top.equalToSuperview().inset(400)
         }
+       
     }
     
     func tenDaysButton(with config: buttonsDaysConfig) {
@@ -195,14 +202,11 @@ class ViewController: UIViewController {
     }
     
     func dayAndTime() {
-        let timeDate = UILabel()
-        let timeAndDate = TimeAndDate()
-        
-            timeAndDate.closure = { value in
-                    timeDate.text = "\(value)"
-                    print(value)
-        }
         timeAndDate.timeAndDate()
+        if let time = defaults.string(forKey: "time") {
+            timeDate.text = time
+            print(time)
+        }
         
         timeDate.textColor = .white
         timeDate.font = .systemFont(ofSize: 18)
@@ -266,17 +270,41 @@ class ViewController: UIViewController {
     }
     
     func search() {
-        let image = UIImage(named: "search")
-        let buttonSearch = UIButton(type: .custom)
+        let image = UIImage(named: "search") ?? UIImage()
         buttonSearch.setImage(image, for: .normal)
         view.addSubview(buttonSearch)
-        
+        buttonSearch.imageView?.contentMode = .center
         buttonSearch.snp.makeConstraints { maker in
-            maker.top.equalToSuperview().inset(55)
-            maker.right.equalToSuperview().inset(20)
-            maker.height.width.equalTo(30)
+            maker.top.equalToSuperview().inset(35)
+            maker.right.equalToSuperview().inset(0)
+            maker.height.width.equalTo(80)
+        }
+        
+        buttonSearch.addTarget(self, action: #selector(newCity), for: .touchUpInside)
+    }
+    
+    @objc private func newCity() {
+        navigationController?.pushViewController(chooseCity, animated: true)
+        
+    }
+}
+
+extension ViewController {
+    override func viewWillAppear(_ animated: Bool) {
+        changeNameCity()
+        DataUrl.urlTemp()
+        changeTimeAndDate()
+    }
+    func changeNameCity() {
+        self.chooseCity.closureCity = { value in
+            self.city.text = value
+        }
+    }
+    func changeTimeAndDate() {
+        timeAndDate.timeAndDate()
+        if let time = defaults.string(forKey: "time") {
+            timeDate.text = time
         }
     }
 }
- 
 

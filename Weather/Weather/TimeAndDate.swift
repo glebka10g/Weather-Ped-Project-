@@ -8,17 +8,18 @@
 import Foundation
 class TimeAndDate {
     var closure: ((String) -> Void)?
-    
+    let formatter = DateFormatter()
+    let defaults = UserDefaults.standard
     func timeAndDate() {
         let date = Date()
         let formatter = DateFormatter()
-        formatter.timeZone = TimeZone(identifier: "Europe/Moscow")
+        let ident = defaults.string(forKey: "time")
+        formatter.timeZone = TimeZone(identifier: ident!)
         formatter.dateFormat = "dd MMM HH:mm"
         formatter.locale = Locale(identifier: "ru_RU")
-        let new = formatter.string(from: date)
-        closure?(new)
-        
-        
+        let time = formatter.string(from: date)
+        defaults.set(time, forKey: "time")
+        print(time)
     }
     
 }

@@ -20,7 +20,6 @@ class SelectionImage {
         DispatchQueue.main.async {
             self.dataURL.closureObl = { value in
 
-                print(value)
                 switch value {
                 case "Clear":
                     self.closureImage?("Sun")
@@ -31,6 +30,9 @@ class SelectionImage {
                 case "Rain":
                     self.closureImage?("Rain")
                     self.closureText?("Дождь")
+                case "Mist":
+                    self.closureImage?("Mist")
+                    self.closureText?("Туман")
                 default:
                     self.closureImage?("Storm")
                     self.closureText?("Дождь с грозой")

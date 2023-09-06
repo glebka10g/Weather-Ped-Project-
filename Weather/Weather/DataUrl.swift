@@ -13,13 +13,23 @@ class testURL {
     var closureMinTemp: ((String) -> Void)?
     var closureObl: ((String) -> Void)?
     var closureFeels: ((String) -> Void)?
+    
+    let ud = UserDefaults.standard
+    
+    var latLon: [Double] = [55.7522,37.6156]
+    
     func urlTemp() {
-        let request = URLRequest(url: URL(string: "https://api.openweathermap.org/data/2.5/weather?lat=55.755864&lon=37.617698&appid=39d77d94f6ad258bdd4de81917ddab12")!)
-        
+        if let defaults = ud.array(forKey: "latLon") as? [Double]{
+                latLon = defaults
+        }
+        print(latLon)
+        let request = URLRequest(url: URL(string: "https://api.openweathermap.org/data/2.5/weather?lat=\(latLon[0])&lon=\(latLon[1])&appid=39d77d94f6ad258bdd4de81917ddab12")!)
         let taskTemp = URLSession.shared.dataTask(with: request) { data, response, error in
             if let data = data, let settings = try? JSONDecoder().decode(Weather.self, from: data) {
                 let tempURL = settings.main.temp
                 let test = String(Int(tempURL - 273))
+                print(test)
+              //  print(self.latLon)
                 self.closureTemp?(test)
                 
                 let tempFeels = settings.main.feelsLike
