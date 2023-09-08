@@ -11,7 +11,7 @@ class Cityes {
     let ud = UserDefaults.standard
     var closureLatLon: (([Double]) -> Void)?
     var timeAndDataCity: ((String) -> Void)?
-    let cityRussia = ["Самара":["Europe/Samara": [53.2, 50.11]], "Москва":["Europe/Moscow": [55.7522, 37.6156]], "Казань":["Europe/Moscow": [55.7887, 49.1221]], "Владивосток":["Asia/Vladivostok": [43.1056, 131.8735]], "Санкт-Петербург":["Europe/Moscow": [59.8944,30.2642]]]
+    let cityRussia = ["Самара":["Europe/Samara": [53.2, 50.11]], "Москва":["Europe/Moscow": [55.7522, 37.6156]], "Казань":["Europe/Moscow": [55.7887, 49.1221]], "Владивосток":["Asia/Vladivostok": [43.1056, 131.8735]], "Сочи":["Europe/Moscow": [43.6, 39.7303]], "Калининград":["Europe/Kaliningrad": [54.7065, 20.511]], "Оренбург":["Europe/Orenburg": [51.7727, 55.0988]], "Красноярск":["Europe/Krasnoyarsk": [56.0097, 92.7917]]]
     
     
     func latLon(_ city: String) {
@@ -21,6 +21,7 @@ class Cityes {
                     }
             if let time = self.cityRussia[city]?.keys {
                 ud.set(time.joined(), forKey: "time")
+                print(time)
             }
         }
     }

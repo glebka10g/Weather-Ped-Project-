@@ -27,10 +27,8 @@ class testURL {
         let taskTemp = URLSession.shared.dataTask(with: request) { data, response, error in
             if let data = data, let settings = try? JSONDecoder().decode(Weather.self, from: data) {
                 let tempURL = settings.main.temp
-                let test = String(Int(tempURL - 273))
-                print(test)
-              //  print(self.latLon)
-                self.closureTemp?(test)
+                let temp = String(Int(tempURL - 273))
+                self.closureTemp?(temp)
                 
                 let tempFeels = settings.main.feelsLike
                 let feels = String((Int(tempFeels - 273)))
@@ -46,6 +44,7 @@ class testURL {
                 
                 let oblURL = settings.weather.first?.main
                 self.closureObl?(oblURL ?? "Error")
+                print(oblURL)
                 
             }
         }

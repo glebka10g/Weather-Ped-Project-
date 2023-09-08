@@ -31,6 +31,7 @@ class ViewController: UIViewController {
     private let city = UILabel()
     private let textTemp = UILabel()
     private let timeDate = UILabel()
+    private var weatherImageView: UIImageView?
     
     private let defaults = UserDefaults.standard
     
@@ -116,7 +117,7 @@ class ViewController: UIViewController {
     func image() {
         imageSelection.closureImage = { value in
             DispatchQueue.main.async{
-                
+                self.weatherImageView?.removeFromSuperview()
                 let newImage = UIImage(named: value)
                 let imageView = UIImageView(image: newImage)
                 self.view.addSubview(imageView)
@@ -125,6 +126,7 @@ class ViewController: UIViewController {
                     maker.top.equalToSuperview().inset(130)
                     maker.right.equalToSuperview().inset(28)
                 }
+                self.weatherImageView = imageView
             }
         }
         imageSelection.testPogoda()
@@ -205,7 +207,6 @@ class ViewController: UIViewController {
         timeAndDate.timeAndDate()
         if let time = defaults.string(forKey: "time") {
             timeDate.text = time
-            print(time)
         }
         
         timeDate.textColor = .white
@@ -294,6 +295,8 @@ extension ViewController {
         changeNameCity()
         DataUrl.urlTemp()
         changeTimeAndDate()
+        image()
+        
     }
     func changeNameCity() {
         self.chooseCity.closureCity = { value in
@@ -305,6 +308,9 @@ extension ViewController {
         if let time = defaults.string(forKey: "time") {
             timeDate.text = time
         }
+    }
+    func changeImage() {
+        
     }
 }
 
