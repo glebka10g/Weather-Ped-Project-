@@ -17,6 +17,7 @@ class testURL {
     var closureSunset: ((String) -> Void)?
     
     private let defaults = UserDefaults.standard
+    private let timeAndDate = TimeAndDate()
     
     private var latLon: [Double] = [55.7522,37.6156]
     private let formatter = DateFormatter()
@@ -48,18 +49,9 @@ class testURL {
                 self.closureObl?(oblURL ?? "Error")
                 
                 let sunrise = settings.sys.sunrise
-                let sunriseDate = Date(timeIntervalSince1970: TimeInterval(sunrise))
-                self.formatter.timeStyle = .short
-                self.formatter.dateFormat = "HH:mm"
-                let sunriseString = self.formatter.string(from: sunriseDate)
-                self.closureSunrise?(sunriseString)
-                
+                self.defaults.set(sunrise, forKey: "unixSunrise")
                 let sunset = settings.sys.sunset
-                let sunsetDate = Date(timeIntervalSince1970: TimeInterval(sunset))
-                self.formatter.timeStyle = .short
-                self.formatter.dateFormat = "HH:mm"
-                let sunsetString = self.formatter.string(from: sunsetDate)
-                self.closureSunset?(sunsetString)
+                self.defaults.set(sunset, forKey: "unixSunset")
             }
         }
         taskTemp.resume()

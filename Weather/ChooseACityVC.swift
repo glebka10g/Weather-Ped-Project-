@@ -12,6 +12,7 @@ class ChooseACityVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     let urlData = testURL()
     let defaults = UserDefaults.standard
     var closureCity: ((String) -> Void)?
+    
 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

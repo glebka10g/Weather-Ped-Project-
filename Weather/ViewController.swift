@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-enum buttonsDaysConfig {
+enum ButtonsDaysConfig {
     case button
     var background: UIColor { return UIColor(red: 225/255, green: 182/255, blue: 255/255, alpha: 1) }
     var font: CGFloat { return 16 }
@@ -18,6 +18,22 @@ enum buttonsDaysConfig {
     var widthConstraint: Int { return 116}
 }
 
+enum LabelConfig {
+    case label
+    var activeBackgroundColor: UIColor {return UIColor(red: 235/255, green: 223/255, blue: 255/255, alpha: 1)}
+    var font: CGFloat { return 23 }
+    var cornerRadius: CGFloat { return 15 }
+    var passiveBackgroundColor: UIColor { return .white }
+    var colorText: UIColor { return .black }
+}
+
+enum SunriseSetCinfig {
+    case image
+    var heightAndWidth: CGFloat { return 130 }
+    var top : CGFloat { return 50 }
+    var leftRight: CGFloat { return 30 }
+    
+}
 
 
 class ViewController: UIViewController {
@@ -36,6 +52,8 @@ class ViewController: UIViewController {
     private let tenButton = UIButton(type: .system)
     private let tomorrow = UIButton(type: .system)
     private let backgroundImage = UIImage(named: "background")
+    private let sunriseLabel = UILabel()
+    private let sunsetLabel = UILabel()
     
     private let defaults = UserDefaults.standard
     
@@ -158,7 +176,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func toDayButton(with config: buttonsDaysConfig) {
+    func toDayButton(with config: ButtonsDaysConfig) {
         sunRiseSet.titleLabel?.font = UIFont.systemFont(ofSize: config.font)
         sunRiseSet.backgroundColor = .white
         sunRiseSet.layer.cornerRadius = config.cornerRadius
@@ -174,7 +192,7 @@ class ViewController: UIViewController {
         sunRiseSet.addTarget(self, action: #selector(sunButton), for: .touchUpInside)
     }
     
-    func tomorrowButton(with config: buttonsDaysConfig) {
+    func tomorrowButton(with config: ButtonsDaysConfig) {
         tomorrow.titleLabel?.font = UIFont.systemFont(ofSize: config.font)
         tomorrow.backgroundColor = .white
         tomorrow.layer.cornerRadius = config.cornerRadius
@@ -187,10 +205,10 @@ class ViewController: UIViewController {
             maker.width.equalTo(config.widthConstraint)
             maker.top.equalToSuperview().inset(400)
         }
-       
+        
     }
     
-    func tenDaysButton(with config: buttonsDaysConfig) {
+    func tenDaysButton(with config: ButtonsDaysConfig) {
         tenButton.titleLabel?.font = UIFont.systemFont(ofSize: config.font)
         tenButton.backgroundColor = .white
         tenButton.layer.cornerRadius = config.cornerRadius
@@ -209,6 +227,7 @@ class ViewController: UIViewController {
         timeAndDate.timeAndDate()
         if let time = defaults.string(forKey: "time") {
             timeDate.text = time
+            print("\(time)")
         }
         
         timeDate.textColor = .white
@@ -287,64 +306,159 @@ class ViewController: UIViewController {
     
     @objc private func newCity() {
         navigationController?.pushViewController(chooseCity, animated: true)
-        
     }
     
     @objc private func sunButton() {
+        deactivateAllButtons()
+        sunRiseSet.backgroundColor = ButtonsDaysConfig.button.background
+        сopyButtonSunrise()
+        сopyButtonSunset()
+    }
+    
+    private func createSunriseImageView() -> UIImageView {
+        let sunriseImage = UIImage(named: "Sunrise")
+        let sunriseImageView = UIImageView(image: sunriseImage)
+        
+        view.addSubview(sunriseImageView)
+        sunriseImageView.snp.makeConstraints { maker in
+            maker.height.width.equalTo(SunriseSetCinfig.image.heightAndWidth)
+            maker.top.equalTo(sunRiseSet).inset(SunriseSetCinfig.image.top)
+            maker.left.equalToSuperview().inset(SunriseSetCinfig.image.leftRight)
+        }
+        
+        return sunriseImageView
+    }
+    
+    private func deactivateAllButtons() {
         tomorrow.backgroundColor = .white
         tenButton.backgroundColor = .white
-        sunRiseSet.backgroundColor = buttonsDaysConfig.button.background
-        
-        let sunriseLabel = UILabel()
-        let buttonSunset = UIButton(type: .system)
-        buttonSunset.layer.cornerRadius = 10
+        sunRiseSet.backgroundColor = .white
+    }
+    
+    private func displaySunriseLabel() -> UILabel {
         sunriseLabel.numberOfLines = 2
         sunriseLabel.layer.masksToBounds = true
-        sunriseLabel.layer.cornerRadius = 10
+        sunriseLabel.layer.cornerRadius = 15
         
-        DataUrl.urlTemp()
-            DataUrl.closureSunrise = { value in
-                DispatchQueue.main.async {
-                    sunriseLabel.text = "Рассвет \n \(value)"
-                    sunriseLabel.textAlignment = .center
-            } }
-        DataUrl.closureSunset = { value in
-            DispatchQueue.main.async {
-                buttonSunset.setTitle("Закат в \(value)", for: .normal)
-            }
-            
-        }
-        buttonSunset.titleLabel?.font = .systemFont(ofSize: 23)
+        sunriseLabel.text = "Рассвет \n \(timeAndDate.sunrise())"
+
+                sunriseLabel.textAlignment = .center
+        
         sunriseLabel.font = .systemFont(ofSize: 23)
-        buttonSunset.setTitleColor(.black, for: .normal)
         sunriseLabel.textColor = .black
         sunriseLabel.backgroundColor = UIColor(red: 235/255, green: 223/255, blue: 255/255, alpha: 1)
-        buttonSunset.backgroundColor = UIColor(red: 235/255, green: 223/255, blue: 255/255, alpha: 1)
         view.addSubview(sunriseLabel)
-        view.addSubview(buttonSunset)
         sunriseLabel.snp.makeConstraints { maker in
-            maker.top.equalTo(sunRiseSet).inset(65)
+            maker.top.equalTo(createSunriseImageView()).inset(130)
             maker.width.equalTo(182)
             maker.height.equalTo(65)
-            maker.left.equalToSuperview().inset(15)
+            maker.left.equalToSuperview().inset(10)
         }
-        buttonSunset.snp.makeConstraints { maker in
-            maker.width.equalTo(282)
+        return sunriseLabel
+    }
+    
+    private func сopyButtonSunrise() {
+        let button = UIButton(type: .system)
+        button.setTitle("Скопировать", for: .normal)
+        button.titleLabel?.font = .systemFont(ofSize: 23)
+        button.tintColor = .black
+        button.backgroundColor = .white
+        button.layer.cornerRadius = 15
+        view.addSubview(button)
+        button.snp.makeConstraints { maker in
+            maker.top.equalTo(displaySunriseLabel()).inset(90)
+            maker.left.equalToSuperview().inset(10)
+            maker.width.equalTo(182)
             maker.height.equalTo(65)
-            maker.bottom.equalToSuperview().inset(100)
-            maker.left.equalToSuperview().inset(30)
         }
+        
+        button.addTarget(self, action: #selector(targetCopySunrise), for: .touchUpInside)
+    }
+    
+    @objc private func targetCopySunrise() {
+        let copy = UIPasteboard.general
+        let timeSunrise = defaults.string(forKey: "sunriseDate")
+        let city = defaults.string(forKey: "city")
+        if let time = timeSunrise {
+            copy.string = "Рассвет в городе '\(city ?? "Error")' начнется в \(time)"
+        }
+    }
+    
+    
+    private func sunsetImage() -> UIImageView {
+        let image = UIImage(named: "Sunset")
+        let imageView = UIImageView(image: image)
+        view.addSubview(imageView)
+        
+        imageView.snp.makeConstraints { maker in
+            maker.height.width.equalTo(SunriseSetCinfig.image.heightAndWidth)
+            maker.top.equalTo(sunRiseSet).inset(SunriseSetCinfig.image.top)
+            maker.right.equalToSuperview().inset(SunriseSetCinfig.image.leftRight)
+        }
+        return imageView
+    }
+    
+    private func displaySunsetLabel() -> UILabel {
+        sunsetLabel.numberOfLines = 2
+        sunsetLabel.layer.masksToBounds = true
+        sunsetLabel.layer.cornerRadius = 15
+        
+        sunsetLabel.text = "Закат \n \(timeAndDate.sunset())"
+                sunsetLabel.textAlignment = .center
+        
+        
+        sunsetLabel.font = .systemFont(ofSize: 23)
+        sunsetLabel.textColor = .black
+        sunsetLabel.backgroundColor = UIColor(red: 235/255, green: 223/255, blue: 255/255, alpha: 1)
+        view.addSubview(sunsetLabel)
+        sunsetLabel.snp.makeConstraints { maker in
+            maker.top.equalTo(sunsetImage()).inset(130)
+            maker.width.equalTo(182)
+            maker.height.equalTo(65)
+            maker.right.equalToSuperview().inset(10)
+        }
+        return sunsetLabel
+    }
+    
+    
+    private func сopyButtonSunset() {
+        let button = UIButton(type: .system)
+        button.setTitle("Скопировать", for: .normal)
+        button.titleLabel?.font = .systemFont(ofSize: 23)
+        button.tintColor = .black
+        button.backgroundColor = .white
+        button.layer.cornerRadius = 15
+        view.addSubview(button)
+        button.snp.makeConstraints { maker in
+            maker.top.equalTo(displaySunsetLabel()).inset(90)
+            maker.right.equalToSuperview().inset(10)
+            maker.width.equalTo(182)
+            maker.height.equalTo(65)
+        }
+        button.addTarget(self, action: #selector(targetCopySunset), for: .touchUpInside)
+    }
+    
+    @objc private func targetCopySunset() {
+    let copy = UIPasteboard.general
+    let timeSunrise = defaults.string(forKey: "sunsetDate")
+    let city = defaults.string(forKey: "city")
+    if let time = timeSunrise {
+        copy.string = "Закат в городе '\(city ?? "Error")' начнется в \(time)"
     }
 }
 
+}
+
+
 extension ViewController {
+
     override func viewWillAppear(_ animated: Bool) {
         changeNameCity()
         DataUrl.urlTemp()
         changeTimeAndDate()
         image()
-        
     }
+    
     func changeNameCity() {
         self.chooseCity.closureCity = { value in
             self.city.text = value
@@ -356,5 +470,24 @@ extension ViewController {
             timeDate.text = time
         }
     }
-}
+    
+    override func viewDidAppear(_ animated: Bool) {
+        changeSunriseText()
+        changeSunsetText()
+    }
+    
+    func changeSunriseText() {
+        sunriseLabel.text = "Рассвет \n \(timeAndDate.sunrise())"
+        defaults.set(timeAndDate.sunrise(), forKey: "sunriseDate")
+    }
+    func changeSunsetText() {
+        sunsetLabel.text = "Закат \n \(timeAndDate.sunset())"
+        defaults.set("\(timeAndDate.sunset())", forKey: "sunsetDate")
+    }
+    
+    
+    
+    
+    
 
+}
