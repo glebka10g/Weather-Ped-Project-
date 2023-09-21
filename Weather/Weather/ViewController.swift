@@ -32,6 +32,10 @@ class ViewController: UIViewController {
     private let textTemp = UILabel()
     private let timeDate = UILabel()
     private var weatherImageView: UIImageView?
+    private let sunRiseSet = UIButton(type: .system)
+    private let tenButton = UIButton(type: .system)
+    private let tomorrow = UIButton(type: .system)
+    private let backgroundImage = UIImage(named: "background")
     
     private let defaults = UserDefaults.standard
     
@@ -155,30 +159,29 @@ class ViewController: UIViewController {
     }
     
     func toDayButton(with config: buttonsDaysConfig) {
-        let button = UIButton(type: .system)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: config.font)
-        button.backgroundColor = config.background
-        button.layer.cornerRadius = config.cornerRadius
-        button.setTitleColor(config.setTitleColor, for: .normal)
-        button.setTitle("Сегодня", for: .normal)
-        view.addSubview(button)
-        button.snp.makeConstraints { maker in
+        sunRiseSet.titleLabel?.font = UIFont.systemFont(ofSize: config.font)
+        sunRiseSet.backgroundColor = .white
+        sunRiseSet.layer.cornerRadius = config.cornerRadius
+        sunRiseSet.setTitleColor(config.setTitleColor, for: .normal)
+        sunRiseSet.setTitle("Сумерки", for: .normal)
+        view.addSubview(sunRiseSet)
+        sunRiseSet.snp.makeConstraints { maker in
             maker.left.equalToSuperview().inset(10)
             maker.top.equalToSuperview().inset(400)
             maker.height.equalTo(config.heightConstraint)
             maker.width.equalTo(config.widthConstraint)
         }
+        sunRiseSet.addTarget(self, action: #selector(sunButton), for: .touchUpInside)
     }
     
     func tomorrowButton(with config: buttonsDaysConfig) {
-        let button = UIButton(type: .system)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: config.font)
-        button.backgroundColor = .white
-        button.layer.cornerRadius = config.cornerRadius
-        button.setTitleColor(config.setTitleColor, for: .normal)
-        button.setTitle("Завтра", for: .normal)
-        view.addSubview(button)
-        button.snp.makeConstraints { maker in
+        tomorrow.titleLabel?.font = UIFont.systemFont(ofSize: config.font)
+        tomorrow.backgroundColor = .white
+        tomorrow.layer.cornerRadius = config.cornerRadius
+        tomorrow.setTitleColor(config.setTitleColor, for: .normal)
+        tomorrow.setTitle("Завтра", for: .normal)
+        view.addSubview(tomorrow)
+        tomorrow.snp.makeConstraints { maker in
             maker.left.equalToSuperview().inset(139)
             maker.height.equalTo(config.heightConstraint)
             maker.width.equalTo(config.widthConstraint)
@@ -188,14 +191,13 @@ class ViewController: UIViewController {
     }
     
     func tenDaysButton(with config: buttonsDaysConfig) {
-        let button = UIButton(type: .system)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: config.font)
-        button.backgroundColor = .white
-        button.layer.cornerRadius = config.cornerRadius
-        button.setTitleColor(config.setTitleColor, for: .normal)
-        button.setTitle("10 Дней", for: .normal)
-        view.addSubview(button)
-        button.snp.makeConstraints { maker in
+        tenButton.titleLabel?.font = UIFont.systemFont(ofSize: config.font)
+        tenButton.backgroundColor = .white
+        tenButton.layer.cornerRadius = config.cornerRadius
+        tenButton.setTitleColor(config.setTitleColor, for: .normal)
+        tenButton.setTitle("10 Дней", for: .normal)
+        view.addSubview(tenButton)
+        tenButton.snp.makeConstraints { maker in
             maker.left.equalToSuperview().inset(268)
             maker.height.equalTo(config.heightConstraint)
             maker.width.equalTo(config.widthConstraint)
@@ -258,8 +260,7 @@ class ViewController: UIViewController {
     }
     
     func backgroundUP () {
-        let image = UIImage(named: "background")
-        let backgroundImage = UIImageView(image: image)
+        let backgroundImage = UIImageView(image: backgroundImage)
         backgroundImage.layer.masksToBounds = true
         backgroundImage.layer.cornerRadius = 25
         view.insertSubview(backgroundImage, at: 0)
@@ -288,6 +289,52 @@ class ViewController: UIViewController {
         navigationController?.pushViewController(chooseCity, animated: true)
         
     }
+    
+    @objc private func sunButton() {
+        tomorrow.backgroundColor = .white
+        tenButton.backgroundColor = .white
+        sunRiseSet.backgroundColor = buttonsDaysConfig.button.background
+        
+        let sunriseLabel = UILabel()
+        let buttonSunset = UIButton(type: .system)
+        buttonSunset.layer.cornerRadius = 10
+        sunriseLabel.numberOfLines = 2
+        sunriseLabel.layer.masksToBounds = true
+        sunriseLabel.layer.cornerRadius = 10
+        
+        DataUrl.urlTemp()
+            DataUrl.closureSunrise = { value in
+                DispatchQueue.main.async {
+                    sunriseLabel.text = "Рассвет \n \(value)"
+                    sunriseLabel.textAlignment = .center
+            } }
+        DataUrl.closureSunset = { value in
+            DispatchQueue.main.async {
+                buttonSunset.setTitle("Закат в \(value)", for: .normal)
+            }
+            
+        }
+        buttonSunset.titleLabel?.font = .systemFont(ofSize: 23)
+        sunriseLabel.font = .systemFont(ofSize: 23)
+        buttonSunset.setTitleColor(.black, for: .normal)
+        sunriseLabel.textColor = .black
+        sunriseLabel.backgroundColor = UIColor(red: 235/255, green: 223/255, blue: 255/255, alpha: 1)
+        buttonSunset.backgroundColor = UIColor(red: 235/255, green: 223/255, blue: 255/255, alpha: 1)
+        view.addSubview(sunriseLabel)
+        view.addSubview(buttonSunset)
+        sunriseLabel.snp.makeConstraints { maker in
+            maker.top.equalTo(sunRiseSet).inset(65)
+            maker.width.equalTo(182)
+            maker.height.equalTo(65)
+            maker.left.equalToSuperview().inset(15)
+        }
+        buttonSunset.snp.makeConstraints { maker in
+            maker.width.equalTo(282)
+            maker.height.equalTo(65)
+            maker.bottom.equalToSuperview().inset(100)
+            maker.left.equalToSuperview().inset(30)
+        }
+    }
 }
 
 extension ViewController {
@@ -308,9 +355,6 @@ extension ViewController {
         if let time = defaults.string(forKey: "time") {
             timeDate.text = time
         }
-    }
-    func changeImage() {
-        
     }
 }
 

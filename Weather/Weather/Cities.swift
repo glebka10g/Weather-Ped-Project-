@@ -21,7 +21,6 @@ class Cityes {
                     }
             if let time = self.cityRussia[city]?.keys {
                 ud.set(time.joined(), forKey: "time")
-                print(time)
             }
         }
     }

@@ -19,7 +19,6 @@ class TimeAndDate {
         formatter.locale = Locale(identifier: "ru_RU")
         let time = formatter.string(from: date)
         defaults.set(time, forKey: "time")
-        print(time)
     }
     
 }

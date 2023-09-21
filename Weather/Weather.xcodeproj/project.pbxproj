@@ -17,7 +17,7 @@
 		CEDC2EF22A5447860031C424 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC2EF12A5447860031C424 /* SceneDelegate.swift */; };
 		CEDC2EF42A5447860031C424 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC2EF32A5447860031C424 /* ViewController.swift */; };
 		CEDC2EF72A5447860031C424 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDC2EF52A5447860031C424 /* Main.storyboard */; };
-		CEDC2EF92A5447880031C424 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDC2EF82A5447880031C424 /* Assets.xcassets */; };
+		CEDC2EF92A5447880031C424 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = CEDC2EF82A5447880031C424 /* Assets */; };
 		CEDC2EFC2A5447880031C424 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDC2EFA2A5447880031C424 /* LaunchScreen.storyboard */; };
 		E8852B23D010FB59DDDF4628 /* Pods_Weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AFFF1044009EC5382B547D2 /* Pods_Weather.framework */; };
 /* End PBXBuildFile section */
@@ -36,7 +36,7 @@
 		CEDC2EF12A5447860031C424 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CEDC2EF32A5447860031C424 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CEDC2EF62A5447860031C424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CEDC2EF82A5447880031C424 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEDC2EF82A5447880031C424 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
 		CEDC2EFB2A5447880031C424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEDC2EFD2A5447880031C424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED2DB87A53052F27F6C63F75 /* Pods-Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.debug.xcconfig"; path = "Target Support Files/Pods-Weather/Pods-Weather.debug.xcconfig"; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 				CEB35B762A6FCD4E00AB6D1D /* ImageSelection.swift */,
 				CE6C65D02A8CF0B10031E1C2 /* WeatherSettings.swift */,
 				CEDC2EF52A5447860031C424 /* Main.storyboard */,
-				CEDC2EF82A5447880031C424 /* Assets.xcassets */,
+				CEDC2EF82A5447880031C424 /* Assets */,
 				CEDC2EFA2A5447880031C424 /* LaunchScreen.storyboard */,
 				CEDC2EFD2A5447880031C424 /* Info.plist */,
 			);
@@ -170,7 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEDC2EFC2A5447880031C424 /* LaunchScreen.storyboard in Resources */,
-				CEDC2EF92A5447880031C424 /* Assets.xcassets in Resources */,
+				CEDC2EF92A5447880031C424 /* Assets in Resources */,
 				CEDC2EF72A5447860031C424 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
