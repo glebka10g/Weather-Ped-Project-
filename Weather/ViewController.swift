@@ -34,9 +34,22 @@ enum SunriseSetCinfig {
     var leftRight: CGFloat { return 30 }
     
 }
+//enum labelConfig {
+//    case label
+//    var numberOfLines: CGFloat { return 2 }
+//    var font: CGFloat { return 23 }
+//    var colorFont: UIColor { return .black }
+//    var cornerRadius: CGFloat { return 15}
+//    var background: UIColor { return UIColor(red: 235/255, green: 223/255, blue: 255/255, alpha: 1) }
+//}
 
 
 class ViewController: UIViewController {
+    private var windImageView: UIImageView?
+    private var pressureImageView: UIImageView?
+    private var humidityImageView: UIImageView?
+    private var sunriseImageView: UIImageView?
+    private var sunsetImageView: UIImageView?
     private let cityes = Cityes()
     private let DataUrl = testURL()
     private let imageSelection = SelectionImage()
@@ -50,10 +63,13 @@ class ViewController: UIViewController {
     private var weatherImageView: UIImageView?
     private let sunRiseSet = UIButton(type: .system)
     private let tenButton = UIButton(type: .system)
-    private let tomorrow = UIButton(type: .system)
+    private let weather = UIButton(type: .system)
     private let backgroundImage = UIImage(named: "background")
     private let sunriseLabel = UILabel()
     private let sunsetLabel = UILabel()
+    private let humdityLabel = UILabel()
+    private let pressureLabel = UILabel()
+    private let windLabel = UILabel()
     
     private let defaults = UserDefaults.standard
     
@@ -78,7 +94,7 @@ class ViewController: UIViewController {
         tempText()
         feelsLike()
         toDayButton(with: .button)
-        tomorrowButton(with: .button)
+        weatherButton(with: .button)
         tenDaysButton(with: .button)
         dayAndTime()
         maxTemp()
@@ -94,7 +110,7 @@ class ViewController: UIViewController {
         if let nameCity = defaults.string(forKey: "city") {
             city.text = nameCity
         } else {
-            city.text = "Выберите город"
+            city.text = "Москва"
         }
         city.snp.makeConstraints { maker in
             maker.top.left.equalToSuperview().inset(70)
@@ -192,19 +208,20 @@ class ViewController: UIViewController {
         sunRiseSet.addTarget(self, action: #selector(sunButton), for: .touchUpInside)
     }
     
-    func tomorrowButton(with config: ButtonsDaysConfig) {
-        tomorrow.titleLabel?.font = UIFont.systemFont(ofSize: config.font)
-        tomorrow.backgroundColor = .white
-        tomorrow.layer.cornerRadius = config.cornerRadius
-        tomorrow.setTitleColor(config.setTitleColor, for: .normal)
-        tomorrow.setTitle("Завтра", for: .normal)
-        view.addSubview(tomorrow)
-        tomorrow.snp.makeConstraints { maker in
+    func weatherButton(with config: ButtonsDaysConfig) {
+        weather.titleLabel?.font = UIFont.systemFont(ofSize: config.font)
+        weather.backgroundColor = .white
+        weather.layer.cornerRadius = config.cornerRadius
+        weather.setTitleColor(config.setTitleColor, for: .normal)
+        weather.setTitle("Погода", for: .normal)
+        view.addSubview(weather)
+        weather.snp.makeConstraints { maker in
             maker.left.equalToSuperview().inset(139)
             maker.height.equalTo(config.heightConstraint)
             maker.width.equalTo(config.widthConstraint)
             maker.top.equalToSuperview().inset(400)
         }
+        weather.addTarget(self, action: #selector(weatherTarget), for: .touchUpInside)
         
     }
     
@@ -313,24 +330,25 @@ class ViewController: UIViewController {
         sunRiseSet.backgroundColor = ButtonsDaysConfig.button.background
         сopyButtonSunrise()
         сopyButtonSunset()
+        deactiveWeather()
     }
     
     private func createSunriseImageView() -> UIImageView {
         let sunriseImage = UIImage(named: "Sunrise")
-        let sunriseImageView = UIImageView(image: sunriseImage)
+        let imageView = UIImageView(image: sunriseImage)
         
-        view.addSubview(sunriseImageView)
-        sunriseImageView.snp.makeConstraints { maker in
+        view.addSubview(imageView)
+        imageView.snp.makeConstraints { maker in
             maker.height.width.equalTo(SunriseSetCinfig.image.heightAndWidth)
             maker.top.equalTo(sunRiseSet).inset(SunriseSetCinfig.image.top)
             maker.left.equalToSuperview().inset(SunriseSetCinfig.image.leftRight)
         }
-        
-        return sunriseImageView
+        sunriseImageView = imageView
+        return imageView
     }
     
     private func deactivateAllButtons() {
-        tomorrow.backgroundColor = .white
+        weather.backgroundColor = .white
         tenButton.backgroundColor = .white
         sunRiseSet.backgroundColor = .white
     }
@@ -341,8 +359,8 @@ class ViewController: UIViewController {
         sunriseLabel.layer.cornerRadius = 15
         
         sunriseLabel.text = "Рассвет \n \(timeAndDate.sunrise())"
-
-                sunriseLabel.textAlignment = .center
+        
+        sunriseLabel.textAlignment = .center
         
         sunriseLabel.font = .systemFont(ofSize: 23)
         sunriseLabel.textColor = .black
@@ -357,7 +375,7 @@ class ViewController: UIViewController {
         return sunriseLabel
     }
     
-    private func сopyButtonSunrise() {
+    private func сopyButtonSunrise() -> UIButton {
         let button = UIButton(type: .system)
         button.setTitle("Скопировать", for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 23)
@@ -371,8 +389,8 @@ class ViewController: UIViewController {
             maker.width.equalTo(182)
             maker.height.equalTo(65)
         }
-        
         button.addTarget(self, action: #selector(targetCopySunrise), for: .touchUpInside)
+        return button
     }
     
     @objc private func targetCopySunrise() {
@@ -395,6 +413,7 @@ class ViewController: UIViewController {
             maker.top.equalTo(sunRiseSet).inset(SunriseSetCinfig.image.top)
             maker.right.equalToSuperview().inset(SunriseSetCinfig.image.leftRight)
         }
+        sunsetImageView = imageView
         return imageView
     }
     
@@ -404,7 +423,7 @@ class ViewController: UIViewController {
         sunsetLabel.layer.cornerRadius = 15
         
         sunsetLabel.text = "Закат \n \(timeAndDate.sunset())"
-                sunsetLabel.textAlignment = .center
+        sunsetLabel.textAlignment = .center
         
         
         sunsetLabel.font = .systemFont(ofSize: 23)
@@ -439,16 +458,147 @@ class ViewController: UIViewController {
     }
     
     @objc private func targetCopySunset() {
-    let copy = UIPasteboard.general
-    let timeSunrise = defaults.string(forKey: "sunsetDate")
-    let city = defaults.string(forKey: "city")
-    if let time = timeSunrise {
-        copy.string = "Закат в городе '\(city ?? "Error")' начнется в \(time)"
+        let copy = UIPasteboard.general
+        let timeSunrise = defaults.string(forKey: "sunsetDate")
+        let city = defaults.string(forKey: "city")
+        if let time = timeSunrise {
+            copy.string = "Закат в городе '\(city ?? "Error")' начнется в \(time)"
+        }
+    }
+    
+    //Target button 'Weather'
+    @objc private func weatherTarget() {
+        deactivateAllButtons()
+        weather.backgroundColor = ButtonsDaysConfig.button.background
+        
+        for subview in view.subviews {
+            if let button = subview as? UIButton, button.titleLabel?.text == "Скопировать" {
+                button.removeFromSuperview()
+            }
+        }
+        deactiveSunRiseSet()
+        pressureDisplay()
+        humidityDisplay()
+        windDisplay()
+    }
+    
+    private func humdityImageView() -> UIImageView {
+        let humdityImage = UIImage(named: "Humidity")
+        let imageView = UIImageView(image: humdityImage)
+        
+        view.addSubview(imageView)
+        imageView.snp.makeConstraints { maker in
+            maker.height.width.equalTo(120)
+            maker.top.equalTo(sunRiseSet).inset(SunriseSetCinfig.image.top)
+            maker.left.equalToSuperview().inset(30)
+        }
+        humidityImageView = imageView
+        return imageView
+        
+    }
+    private func humidityDisplay() {
+        humdityLabel.layer.masksToBounds = true
+        humdityLabel.numberOfLines = 2
+        humdityLabel.text = ("Влажность \n \(defaults.string(forKey: "humidity") ?? "error")%")
+        humdityLabel.backgroundColor = UIColor(red: 235/255, green: 223/255, blue: 255/255, alpha: 1)
+        humdityLabel.textAlignment = .center
+        humdityLabel.layer.cornerRadius = 15
+        humdityLabel.font = .systemFont(ofSize: LabelConfig.label.font)
+        view.addSubview(humdityLabel)
+        humdityLabel.snp.makeConstraints { maker in
+            maker.top.equalTo(humdityImageView()).inset(135)
+            maker.width.equalTo(182)
+            maker.height.equalTo(65)
+            maker.left.equalToSuperview().inset(10)
+        }
+    }
+    
+    private func pressureImage() -> UIImageView {
+        let image = UIImage(named: "Pressure")
+        let imageView = UIImageView(image: image)
+        view.addSubview(imageView)
+        imageView.snp.makeConstraints { maker in
+            maker.height.width.equalTo(120)
+            maker.top.equalTo(sunRiseSet).inset(SunriseSetCinfig.image.top + 5 )
+            maker.right.equalToSuperview().inset(30)
+        }
+        pressureImageView = imageView
+        return imageView
+    }
+    
+    private func pressureDisplay() {
+        let pressureClass = Pressure()
+        pressureLabel.numberOfLines = 2
+        pressureLabel.layer.masksToBounds = true
+        pressureLabel.textAlignment = .center
+        pressureLabel.text = ("Давление \n\(String(pressureClass.convertion())) мм.рт.ст")
+        pressureLabel.backgroundColor = UIColor(red: 235/255, green: 223/255, blue: 255/255, alpha: 1)
+        pressureLabel.textColor = .black
+        pressureLabel.font = .systemFont(ofSize: LabelConfig.label.font)
+        pressureLabel.layer.cornerRadius = 15
+        view.addSubview(pressureLabel)
+        pressureLabel.snp.makeConstraints { maker in
+            maker.top.equalTo(pressureImage()).inset(130)
+            maker.width.equalTo(182)
+            maker.height.equalTo(65)
+            maker.right.equalToSuperview().inset(10)
+        }
+    }
+    
+    private func windImage() -> UIImageView {
+        let image = UIImage(named: "Wind")
+        let imageView = UIImageView(image: image)
+        view.addSubview(imageView)
+        imageView.snp.makeConstraints { maker in
+            maker.height.width.equalTo(85)
+            maker.top.equalTo(pressureLabel).inset(90)
+            maker.left.equalTo(10)
+        }
+        windImageView = imageView
+        return imageView
+    }
+    
+    private func windDisplay() {
+        windLabel.text = ("Скорость ветра - \(self.defaults.string(forKey: "Wind") ?? "Error")")
+        windLabel.layer.masksToBounds = true
+        windLabel.layer.cornerRadius = 15
+        view.addSubview(windLabel)
+        windLabel.font = .systemFont(ofSize: 22)
+        windLabel.backgroundColor = UIColor(red: 235/255, green: 223/255, blue: 255/255, alpha: 1)
+        windLabel.textColor = .black
+        windLabel.textAlignment = .center
+        windLabel.snp.makeConstraints { maker in
+            maker.left.equalTo(windImage()).inset(100)
+            maker.top.equalTo(humdityLabel).inset(100)
+            maker.right.equalToSuperview().inset(20)
+            maker.height.equalTo(65)
+        }
+    }
+    
+    
+    func deactiveSunRiseSet() {
+        for subview in view.subviews {
+            if let button = subview as? UIButton, button.titleLabel?.text == "Скопировать" {
+                button.removeFromSuperview()
+            }
+            
+            sunriseImageView?.removeFromSuperview()
+            sunsetImageView?.removeFromSuperview()
+            sunriseLabel.removeFromSuperview()
+            sunsetLabel.removeFromSuperview()
+        }
+    }
+    func deactiveWeather() {
+        humidityImageView?.removeFromSuperview()
+        humdityLabel.removeFromSuperview()
+        
+        pressureImageView?.removeFromSuperview()
+        pressureLabel.removeFromSuperview()
+        
+        windImageView?.removeFromSuperview()
+        windLabel.removeFromSuperview()
     }
 }
-
-}
-
 
 extension ViewController {
 
@@ -456,7 +606,7 @@ extension ViewController {
         changeNameCity()
         DataUrl.urlTemp()
         changeTimeAndDate()
-        image()
+        changeHumidity()
     }
     
     func changeNameCity() {
@@ -472,10 +622,30 @@ extension ViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        changeSunriseText()
-        changeSunsetText()
+        if sunRiseSet.backgroundColor == ButtonsDaysConfig.button.background {
+            changeSunriseText()
+            changeSunsetText()
+        }
+        if weather.backgroundColor == ButtonsDaysConfig.button.background {
+            changeHumidity()
+            changePessure()
+            changeWind()
+        }
     }
     
+    private func changeWind() {
+        windLabel.text = ("Скорость ветра - \(self.defaults.string(forKey: "Wind") ?? "Error")")
+    }
+    
+    func changePessure() {
+        let pressure = Pressure()
+        pressureLabel.text = ("Давление \n\(String(pressure.convertion())) мм.рт.ст")
+    }
+    func changeHumidity() {
+        if let text = self.defaults.string(forKey: "humidity") {
+            self.humdityLabel.text = ("Влажность \n \(text)%")
+        }
+    }
     func changeSunriseText() {
         sunriseLabel.text = "Рассвет \n \(timeAndDate.sunrise())"
         defaults.set(timeAndDate.sunrise(), forKey: "sunriseDate")

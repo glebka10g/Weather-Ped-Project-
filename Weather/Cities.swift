@@ -23,7 +23,12 @@ class Cityes {
     }
         
     func timeLocal() -> String {
-                return (cityRussia[ud.string(forKey: "city")!]?.keys.joined())!
+        if let city = ud.string(forKey: "city") {
+            return (cityRussia[ud.string(forKey: "city")!]?.keys.joined())!
+        } else {
+            return "Europe/Moscow"
+        }
+        
         }
         
     }

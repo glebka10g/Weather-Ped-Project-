@@ -15,6 +15,7 @@ class testURL {
     var closureFeels: ((String) -> Void)?
     var closureSunrise: ((String) -> Void)?
     var closureSunset: ((String) -> Void)?
+    var closureHumidity: ((Int) -> Void)?
     
     private let defaults = UserDefaults.standard
     private let timeAndDate = TimeAndDate()
@@ -52,6 +53,15 @@ class testURL {
                 self.defaults.set(sunrise, forKey: "unixSunrise")
                 let sunset = settings.sys.sunset
                 self.defaults.set(sunset, forKey: "unixSunset")
+                
+                let humidity = settings.main.humidity
+                self.defaults.set(humidity, forKey: "humidity")
+                
+                let pressure = settings.main.pressure
+                self.defaults.set(pressure, forKey: "pressureConv")
+                
+                let wind = settings.wind.speed
+                self.defaults.set(wind, forKey: "Wind")
             }
         }
         taskTemp.resume()
