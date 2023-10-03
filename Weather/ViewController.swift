@@ -62,7 +62,7 @@ class ViewController: UIViewController {
     private let timeDate = UILabel()
     private var weatherImageView: UIImageView?
     private let sunRiseSet = UIButton(type: .system)
-    private let tenButton = UIButton(type: .system)
+    private let toGo = UIButton(type: .system)
     private let weather = UIButton(type: .system)
     private let backgroundImage = UIImage(named: "background")
     private let sunriseLabel = UILabel()
@@ -72,6 +72,12 @@ class ViewController: UIViewController {
     private let windLabel = UILabel()
     
     private let defaults = UserDefaults.standard
+    
+    let tableView: UITableView = {
+        let table = UITableView()
+        table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        return table
+    }()
     
     struct Label {
         var name: String
@@ -226,18 +232,19 @@ class ViewController: UIViewController {
     }
     
     func tenDaysButton(with config: ButtonsDaysConfig) {
-        tenButton.titleLabel?.font = UIFont.systemFont(ofSize: config.font)
-        tenButton.backgroundColor = .white
-        tenButton.layer.cornerRadius = config.cornerRadius
-        tenButton.setTitleColor(config.setTitleColor, for: .normal)
-        tenButton.setTitle("10 Дней", for: .normal)
-        view.addSubview(tenButton)
-        tenButton.snp.makeConstraints { maker in
+        toGo.titleLabel?.font = UIFont.systemFont(ofSize: config.font)
+        toGo.backgroundColor = .white
+        toGo.layer.cornerRadius = config.cornerRadius
+        toGo.setTitleColor(config.setTitleColor, for: .normal)
+        toGo.setTitle("Куда сходить", for: .normal)
+        view.addSubview(toGo)
+        toGo.snp.makeConstraints { maker in
             maker.left.equalToSuperview().inset(268)
             maker.height.equalTo(config.heightConstraint)
             maker.width.equalTo(config.widthConstraint)
             maker.top.equalToSuperview().inset(400)
         }
+        toGo.addTarget(self, action: #selector(toGoTarget), for: .touchUpInside)
     }
     
     func dayAndTime() {
@@ -349,7 +356,7 @@ class ViewController: UIViewController {
     
     private func deactivateAllButtons() {
         weather.backgroundColor = .white
-        tenButton.backgroundColor = .white
+        toGo.backgroundColor = .white
         sunRiseSet.backgroundColor = .white
     }
     
@@ -598,10 +605,18 @@ class ViewController: UIViewController {
         windImageView?.removeFromSuperview()
         windLabel.removeFromSuperview()
     }
+    
+    @objc private func toGoTarget() {
+        deactivateAllButtons()
+        deactiveWeather()
+        deactiveSunRiseSet()
+        let testVC = testTableView()
+        navigationController?.pushViewController(testVC, animated: false)
+    }
 }
 
 extension ViewController {
-
+    
     override func viewWillAppear(_ animated: Bool) {
         changeNameCity()
         DataUrl.urlTemp()
@@ -654,10 +669,4 @@ extension ViewController {
         sunsetLabel.text = "Закат \n \(timeAndDate.sunset())"
         defaults.set("\(timeAndDate.sunset())", forKey: "sunsetDate")
     }
-    
-    
-    
-    
-    
-
 }

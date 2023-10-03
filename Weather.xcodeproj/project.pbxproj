@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE452EC52ACC1B73006B4C98 /* testTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE452EC42ACC1B73006B4C98 /* testTableView.swift */; };
 		CE6C65D12A8CF0B10031E1C2 /* WeatherSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6C65D02A8CF0B10031E1C2 /* WeatherSettings.swift */; };
 		CE6C65DB2A8E2B4B0031E1C2 /* DataURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6C65DA2A8E2B4B0031E1C2 /* DataURL.swift */; };
 		CE6C65FD2A9605450031E1C2 /* TimeAndDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6C65FC2A9605450031E1C2 /* TimeAndDate.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		3AFFF1044009EC5382B547D2 /* Pods_Weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44E7B7D317C5E3D16414349F /* Pods-Weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.release.xcconfig"; path = "Target Support Files/Pods-Weather/Pods-Weather.release.xcconfig"; sourceTree = "<group>"; };
+		CE452EC42ACC1B73006B4C98 /* testTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testTableView.swift; sourceTree = "<group>"; };
 		CE6C65D02A8CF0B10031E1C2 /* WeatherSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherSettings.swift; sourceTree = "<group>"; };
 		CE6C65DA2A8E2B4B0031E1C2 /* DataURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataURL.swift; sourceTree = "<group>"; };
 		CE6C65FC2A9605450031E1C2 /* TimeAndDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeAndDate.swift; sourceTree = "<group>"; };
@@ -88,12 +90,13 @@
 				CEDC2EEF2A5447860031C424 /* AppDelegate.swift */,
 				CEDC2EF12A5447860031C424 /* SceneDelegate.swift */,
 				CEDC2EF32A5447860031C424 /* ViewController.swift */,
+				CE452EC42ACC1B73006B4C98 /* testTableView.swift */,
 				CE93A1A42AC430500073BBD9 /* Pressure.swift */,
 				CE6C65FE2A9C96310031E1C2 /* ChooseACityVC.swift */,
 				CE6C65DA2A8E2B4B0031E1C2 /* DataURL.swift */,
 				CE6C66002A9C9D4C0031E1C2 /* Cities.swift */,
-				CE6C65FC2A9605450031E1C2 /* TimeAndDate.swift */,
 				CEB35B762A6FCD4E00AB6D1D /* ImageSelection.swift */,
+				CE6C65FC2A9605450031E1C2 /* TimeAndDate.swift */,
 				CE6C65D02A8CF0B10031E1C2 /* WeatherSettings.swift */,
 				CEDC2EF52A5447860031C424 /* Main.storyboard */,
 				CEDC2EF82A5447880031C424 /* Assets.xcassets */,
@@ -236,6 +239,7 @@
 				CE6C65D12A8CF0B10031E1C2 /* WeatherSettings.swift in Sources */,
 				CE6C66012A9C9D4C0031E1C2 /* Cities.swift in Sources */,
 				CEDC2EF02A5447860031C424 /* AppDelegate.swift in Sources */,
+				CE452EC52ACC1B73006B4C98 /* testTableView.swift in Sources */,
 				CEDC2EF22A5447860031C424 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
